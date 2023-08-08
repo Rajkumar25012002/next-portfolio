@@ -53,7 +53,7 @@ const Projects = () => {
       backgroundImg: Solar,
       projectUrl: "/Mpptsolar",
       tech: "Fuzzy logic",
-      websiteUrl: "https://rockymobiles.netlify.app/",
+      websiteUrl: "https://rockymobiles.netlify.app/ ",
     },
     {
       title: "Hand Gesture Controll device",

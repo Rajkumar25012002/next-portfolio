@@ -22,16 +22,16 @@ const ProjectItem = ({
         </h3>
         <p className="pb-4 pt-2 text-white text-center">{tech}</p>
         <div className="grid grid-cols-2 gap-4 h-auto justify-center  items-center">
-          <Link href={websiteUrl} target="_blank">
+          <a href={websiteUrl} target="_blank">
             <p className="text-center  py-2 rounded-2xl bg-white text-gray-700 font-bold text-lg cursor-pointer">
               Demo
             </p>
-          </Link>
-          <Link href={projectUrl} target="_blank">
+          </a>
+          <a href={projectUrl} target="_blank">
             <p className="text-center  py-2 rounded-2xl bg-white text-gray-700 font-bold text-lg cursor-pointer">
               Code
             </p>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
