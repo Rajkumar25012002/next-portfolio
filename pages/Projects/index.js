@@ -53,13 +53,13 @@ const Projects = () => {
       backgroundImg: Solar,
       projectUrl: "/Mpptsolar",
       tech: "Fuzzy logic",
-      websiteUrl: "",
+      websiteUrl: "https://rockymobiles.netlify.app/",
     },
     {
       title: "Hand Gesture Controll device",
       backgroundImg: Gesture,
       projectUrl: "/HandGesture",
-      websiteUrl: "",
+      websiteUrl: "https://rockymobiles.netlify.app/",
       tech: "Aurdino",
     },
     ,
@@ -67,11 +67,11 @@ const Projects = () => {
       title: "Water storage using mesh",
       backgroundImg: Mesh,
       projectUrl: "/Mesh",
-      websiteUrl: "",
+      websiteUrl: "https://rockymobiles.netlify.app/",
       tech: "Hardware",
     },
   ];
-  
+
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
@@ -81,7 +81,16 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projectData.map((item, index) => {
-            return <ProjectItem key={index} {...item} />;
+            return (
+              <ProjectItem
+                key={index}
+                title={item.title}
+                backgroundImg={item.backgroundImg}
+                projectUrl={item.projectUrl}
+                websiteUrl={item.websiteUrl}
+                tech={item.tech}
+              />
+            );
           })}
         </div>
       </div>
