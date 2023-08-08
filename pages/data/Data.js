@@ -1,3 +1,4 @@
+import React from "react";
 import Html from "@/public/assets/skills/html.png";
 import Css from "@/public/assets/skills/css.png";
 import Javascript from "@/public/assets/skills/javascript.png";
@@ -20,7 +21,7 @@ import weatherApp from "@/public/assets/weather.jpg";
 import mobileStore from "@/public/assets/mobileStore.jpg";
 import blogpost from "@/public/assets/blogpost.jpg";
 
- const AboutDetails = {
+export default AboutDetails = {
   intro: [
     `As an engineering graduate, I am determined to thrive in this highly competitive world and carve a successful path in the IT field. 
   I am passionate about exploring new and innovative technologies, always eager to stay updated with the latest advancements in the industry.
@@ -116,4 +117,3 @@ export const projectData = [
     tech: "Hardware",
   },
 ];
-export default AboutDetails;
