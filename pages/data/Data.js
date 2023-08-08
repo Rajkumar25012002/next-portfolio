@@ -21,7 +21,7 @@ import weatherApp from "@/public/assets/weather.jpg";
 import mobileStore from "@/public/assets/mobileStore.jpg";
 import blogpost from "@/public/assets/blogpost.jpg";
 
-export default AboutDetails = {
+ const AboutDetails= {
   intro: [
     `As an engineering graduate, I am determined to thrive in this highly competitive world and carve a successful path in the IT field. 
   I am passionate about exploring new and innovative technologies, always eager to stay updated with the latest advancements in the industry.
@@ -42,7 +42,7 @@ export default AboutDetails = {
   I am open to new challenges and opportunities, and I believe that my dedication, technical expertise, and passion for innovation make me an ideal fit for the IT industry`,
   ],
 };
-
+export default AboutDetails;
 export const Skillset = [
   { id: 1, name: "Appian", imageSource: Appian },
   { id: 2, name: "HTML", imageSource: Html },
