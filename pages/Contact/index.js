@@ -34,7 +34,7 @@ const Contact = () => {
                   technology and design. Open to new opportunities, I am eager
                   to bring my expertise to projects that push boundaries and
                   elevate user interactions. Feel free to reach out to me for
-                  collaboration or any inquiries – let's create something
+                  collaboration or any inquiries – let &apos s create something
                   amazing together
                 </p>
               </div>
