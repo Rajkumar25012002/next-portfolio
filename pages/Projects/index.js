@@ -79,7 +79,9 @@ const Projects = () => {
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="">
+          <div className="">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectData.map((item, index) => {
             return (
               <ProjectItem
@@ -92,6 +94,8 @@ const Projects = () => {
               />
             );
           })}
+        </div>
+        </div>
         </div>
       </div>
     </div>
