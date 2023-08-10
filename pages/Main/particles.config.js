@@ -1,4 +1,6 @@
-const particleConfig = {
+import React from "react";
+const particleConfig=() =>{ 
+  return{
   autoPlay: true,
   background: {
     color: {
@@ -590,5 +592,5 @@ const particleConfig = {
       value: true,
     },
   },
-};
+}};
 export default particleConfig;
