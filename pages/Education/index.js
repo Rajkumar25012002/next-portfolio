@@ -4,7 +4,7 @@ import React from "react";
  
  const Education = () => {
    return (
-     <div>index</div>
+     <div classNae="bg-[rgb(11,11,11)]">index</div>
    )
  }
  

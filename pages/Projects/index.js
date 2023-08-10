@@ -73,7 +73,7 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="w-full">
+    <div id="projects" className=" bg-[rgb(11,11,11)] w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-sky-700">
           Projects

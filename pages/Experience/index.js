@@ -4,7 +4,7 @@ import React from "react";
  
  const Experience = () => {
    return (
-     <div>index</div>
+     <div className="bg-[rgb(11,11,11)]">index</div>
    )
  }
  
