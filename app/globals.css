@@ -56,5 +56,58 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
   }
 }
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideBackLeft{
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideBackRight{
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.animate-slide-left {
+  animation: slideLeft 2s ease-out;
+}
+
+.animate-slide-right {
+  animation: slideRight 2s ease-out;
+}
+.animate-back-left {
+  animation: slideBackLeft 2s ease-out;
+}
+
+.animate-back-right {
+  animation: slideBackRight 2s ease-out;
+}
+
+
+
+
+
+
 
 

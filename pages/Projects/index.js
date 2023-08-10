@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import ProjectItem from "./ProjectItem";
 // import { projectData } from "../data/Data";
-
+import { motion } from "framer-motion";
 import Mesh from "@/public/assets/mesh.jpg";
 import Gesture from "@/public/assets/handgesture.jpg";
 import Solar from "@/public/assets/light.jpg";
@@ -12,6 +13,14 @@ import mobileStore from "@/public/assets/mobileStore.jpg";
 import blogpost from "@/public/assets/blogpost.jpg";
 
 const Projects = () => {
+  const itemVariants = {
+    hidden: { opacity: 0, y: -20 },
+    show: { opacity: 1, y: 0 },
+  };
+  const variants = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
   const projectData = [
     {
       title: "Job Finder",
@@ -75,27 +84,48 @@ const Projects = () => {
   return (
     <div id="projects" className=" bg-[rgb(11,11,11)] w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl tracking-widest uppercase text-sky-700">
+        <motion.p
+          variants={variants}
+          initial="hidden"
+          animate="show"
+          transition={{ duration: 1 }}
+          className="text-xl tracking-widest uppercase text-sky-700"
+        >
           Projects
-        </p>
-        <h2 className="py-4">What I&apos;ve Built</h2>
+        </motion.p>
+        <motion.h2
+          variants={variants}
+          initial="hidden"
+          animate="show"
+          transition={{ duration: 1 }}
+          className="py-4"
+        >
+          What I&apos;ve Built
+        </motion.h2>
         <div className="">
           <div className="">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectData.map((item, index) => {
-            return (
-              <ProjectItem
-                key={index}
-                title={item.title}
-                backgroundImg={item.backgroundImg}
-                projectUrl={item.projectUrl}
-                websiteUrl={item.websiteUrl}
-                tech={item.tech}
-              />
-            );
-          })}
-        </div>
-        </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {projectData.map((item, index) => {
+                return (
+                  <motion.div
+                    variants={itemVariants}
+                    initial="hidden"
+                    whileInView="show"
+                    transition={{ duration: 1, delay: index * 0.2 }}
+                  >
+                    <ProjectItem
+                      key={index}
+                      title={item.title}
+                      backgroundImg={item.backgroundImg}
+                      projectUrl={item.projectUrl}
+                      websiteUrl={item.websiteUrl}
+                      tech={item.tech}
+                    />
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>

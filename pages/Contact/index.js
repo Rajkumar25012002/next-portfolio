@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -6,17 +7,49 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import ContactImage from "@/public/assets/contact.jpg";
-
+import { motion } from "framer-motion";
 const Contact = () => {
+  const variantleft = {
+    hidden: { opacity: 0, x: -100 },
+    show: { opacity: 1, x: 0 },
+  };
+  const variantright = {
+    hidden: { opacity: 0, x: 100 },
+    show: { opacity: 1, x: 0 },
+  };
+  const variant = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
-        <p className="text-xl tracking-widest uppercase text-sky-700">
+        <motion.p
+          variants={variant}
+          initial="hidden"
+          whileInView={"show"}
+          transition={{ duration: 1 }}
+          className="text-xl tracking-widest uppercase text-sky-700"
+        >
           Contact
-        </p>
-        <h2 className="py-4">Get In Touch</h2>
+        </motion.p>
+        <motion.h2
+          variants={variant}
+          initial="hidden"
+          whileInView={"show"}
+          transition={{ duration: 1 }}
+          className="py-4"
+        >
+          Get In Touch
+        </motion.h2>
         <div className="grid lg:grid-cols-5 gap-8">
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl bg-[rgba(255,255,255,0.02)] rounded-xl p-4">
+          <motion.div
+            variants={variantleft}
+            initial="hidden"
+            whileInView={"show"}
+            transition={{ duration: 1 }}
+            className="col-span-3 lg:col-span-2 w-full h-full shadow-xl bg-[rgba(255,255,255,0.02)] rounded-xl p-4"
+          >
             <div className="lg:p-4 h-full ">
               <div>
                 <Image
@@ -61,8 +94,14 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-span-3 w-full h-auto shadow-xl bg-[rgba(255,255,255,0.02)]  rounded-xl lg:p-5">
+          </motion.div>
+          <motion.div
+            variants={variantright}
+            initial="hidden"
+            whileInView={"show"}
+            transition={{ duration: 1 }}
+            className="col-span-3 w-full h-auto shadow-xl bg-[rgba(255,255,255,0.02)]  rounded-xl lg:p-5"
+          >
             <div className="p-5">
               <form action="" method="" encType="">
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
@@ -119,7 +158,7 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
