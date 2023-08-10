@@ -108,6 +108,7 @@ const Projects = () => {
               {projectData.map((item, index) => {
                 return (
                   <motion.div
+                  key={index}
                     variants={itemVariants}
                     initial="hidden"
                     whileInView="show"
