@@ -40,7 +40,7 @@ const Skills = () => {
     { id: 12, name: "MongoDB", imageSource: Mongo },
   ];
   return (
-    <div id="skills" className=" bg-[rgb(11,11,11)] w-full lg:h-screen p-2">
+    <div id="skills" className=" bg-[rgb(11,11,11)] w-full lg:h-screen p-4">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <motion.p
           variants={variants}
@@ -60,7 +60,7 @@ const Skills = () => {
         >
           What I Can Do
         </motion.h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {Skillset.map((value, index) => {
             return (
               <motion.div
@@ -71,7 +71,7 @@ const Skills = () => {
                 transition={{ duration: 1, delay: index * 0.1 }}
                 className="p-3 bg-[rgba(255,255,255,0.02)] shadow-xl z-100 rounded-xl hover:scale-105 ease-in duration-300"
               >
-                <div className="grid sm:grid-cols-2 gap-2 h-auto justify-center  items-center">
+                <div className="grid sm:grid-cols-2 gap-1 h-auto justify-center  items-center">
                   <div className="m-auto">
                     <Image
                       src={value.imageSource}

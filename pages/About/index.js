@@ -3,6 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Profile from "@/public/assets/profile_pic.png";
+import { AiOutlineDownload } from "react-icons/ai";
+import Resumee from "../../public/RajKumar_resume.pdf";
 const About = () => {
   const AboutDetails = {
     intro: [
@@ -50,8 +52,12 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-300">{AboutDetails.intro}</p>
-          <p className="py-2 text-gray-300">{AboutDetails.brief}</p>
+          <p className="py-2 text-justify text-gray-300">
+            {AboutDetails.intro}
+          </p>
+          <p className="py-2 text-justify text-gray-300">
+            {AboutDetails.brief}
+          </p>
         </motion.div>
 
         <motion.div
@@ -59,9 +65,25 @@ const About = () => {
           initial="hidden"
           whileInView={"show"}
           transition={{ duration: 0.5 }}
-          className={`h-[70%] w-[65%] m-auto rounded-xl flex items-center justify-center  hover:scale-105 ease-in duration-300`}
+          className={`h-[70%] w-[65%] m-auto rounded-xl flex flex-col gap-2 items-center justify-center  hover:scale-105 ease-in duration-300`}
         >
           <Image src={Profile} className="rounded-xl" alt="/" />
+          <motion.div
+            variants={variantright}
+            initial="hidden"
+            whileInView={"show"}
+            transition={{ duration: 1 }}
+            className="rounded-xl p-2 bg-gradient-to-r from-[rgb(176,108,234)] to-[rgb(255,116,95)] hover:translate-y-4 ease-in-out duration-200"
+          >
+            <a
+              href={Resumee}
+              target="_blank"
+              className="flex gap-1 items-center"
+            >
+              <AiOutlineDownload />
+              Resume
+            </a>
+          </motion.div>
         </motion.div>
       </div>
     </div>

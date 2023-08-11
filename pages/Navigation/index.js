@@ -30,21 +30,21 @@ const NavBar = () => {
       className={
         shadow
           ? " bg-[rgba(16,15,15,0.8)] fixed w-full h-20 l z-[100] ease-in-out duration-700"
-          : "fixed w-full h-20 z-[100]"
+          : "fixed w-full h-20 z-[100] "
       }
     >
       <div className="flex justify-end md:justify-center items-center w-full h-full px-2">
         <div>
-          <ul className=" hidden md:flex">
+          <ul className=" hidden md:flex ">
             <Link href="/">
-              <li className="text-sky-700 ml-10 text sm uppercase font-bold  hover:text-purple-700">
+              <li className="text-sky-700 ml-10 text lg uppercase font-bold  hover:text-white">
                 Home
               </li>
             </Link>
             <Link href="#about">
               <li
                 className="text-sky-700 ml-10 text sm uppercase font-bold
-                 hover:text-purple-700"
+                 hover:text-white"
               >
                 About
               </li>
@@ -52,23 +52,23 @@ const NavBar = () => {
             <Link href="#skills">
               <li
                 className="text-sky-700 ml-10 text sm uppercase font-bold
-                 hover:text-purple-700"
+                hover:text-white"
               >
                 Skills
               </li>
             </Link>
-            <Link href="#about">
+            <Link href="#background">
               <li
                 className="text-sky-700 ml-10 text sm uppercase font-bold
-                 hover:text-purple-700"
+                hover:text-white"
               >
-                Education
+                Background
               </li>
             </Link>
             <Link href="#projects">
               <li
                 className="text-sky-700 ml-10 text sm uppercase font-bold
-                 hover:text-purple-700"
+                hover:text-white"
               >
                 Projects
               </li>
@@ -76,7 +76,7 @@ const NavBar = () => {
             <Link href="#contact">
               <li
                 className="text-sky-700 ml-10 text sm uppercase font-bold
-                 hover:text-purple-700"
+                hover:text-white"
               >
                 Contact
               </li>
@@ -84,7 +84,7 @@ const NavBar = () => {
           </ul>
           <div
             onClick={handleNav}
-            className="md:hidden text-sky-700 hover:text-purple-700"
+            className="md:hidden text-sky-700 hover:text-white"
           >
             <AiOutlineMenu></AiOutlineMenu>
           </div>
@@ -134,7 +134,7 @@ const NavBar = () => {
                   <GiSkills />
                 </li>
               </Link>
-              <Link href="/#education">
+              <Link href="/#background">
                 <li
                   onClick={() => {
                     setNav(false);
@@ -142,16 +142,6 @@ const NavBar = () => {
                   className="py-3 text-2xl hover:text-purple-700 text-sky-700 "
                 >
                   <IoSchoolSharp />
-                </li>
-              </Link>
-              <Link href="/#experience">
-                <li
-                  onClick={() => {
-                    setNav(false);
-                  }}
-                  className="py-3 text-2xl hover:text-purple-700 text-sky-700 "
-                >
-                  <AiFillExperiment />
                 </li>
               </Link>
               <Link href="/#projects">

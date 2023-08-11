@@ -4,6 +4,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { motion } from "framer-motion";
+import Resume from "../../public/RajKumar_resume.pdf";
 import Link from "next/link";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -26,7 +27,7 @@ const Main = () => {
   };
   const particlesLoaded = useCallback(async (container) => {}, []);
   return (
-    <div>
+    <div className="w-full select-none h-screen">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -694,16 +695,16 @@ const Main = () => {
                   <FaGithub />
                 </div>
               </a>
-              <Link href="/Contact">
+              <Link href="/#contact">
                 <div className="rounded-full  bg-sky-800  text-white shadow-sm shadow-gray-800 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <AiOutlineMail />
                 </div>
               </Link>
-              <Link href="/Resume">
+              <a href={Resume} target="_blank">
                 <div className="rounded-full  bg-sky-800  text-white shadow-sm shadow-gray-800 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                   <BsFillPersonLinesFill />
                 </div>
-              </Link>
+              </a>
             </motion.div>
           </div>
         </div>

@@ -17,9 +17,7 @@ const ProjectItem = ({
         alt="/"
       />
       <div className=" hidden  group-hover:block absolute top-[50%] left-[50%] w-full translate-x-[-50%] translate-y-[-50%]">
-        <h3 className="text-xl text-white text-center">
-          {title}
-        </h3>
+        <h3 className="text-xl text-white text-center">{title}</h3>
         <p className="pb-4 pt-2 text-white text-center">{tech}</p>
         <div className="grid grid-cols-2 gap-4 h-auto ">
           <a href={websiteUrl} target="_blank" className="flex justify-center">

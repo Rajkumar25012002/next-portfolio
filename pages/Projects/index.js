@@ -108,11 +108,11 @@ const Projects = () => {
               {projectData.map((item, index) => {
                 return (
                   <motion.div
-                  key={index}
+                    key={index}
                     variants={itemVariants}
                     initial="hidden"
                     whileInView="show"
-                    transition={{ duration: 1, delay: index * 0.2 }}
+                    transition={{ duration: 1, delay: index * 0.1 }}
                   >
                     <ProjectItem
                       key={index}
