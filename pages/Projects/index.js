@@ -11,6 +11,7 @@ import chatApp from "@/public/assets/chatapp.jpg";
 import weatherApp from "@/public/assets/weather.jpg";
 import mobileStore from "@/public/assets/mobileStore.jpg";
 import blogpost from "@/public/assets/blogpost.jpg";
+import carRental from '@/public/assets/car-rental.png'
 
 const Projects = () => {
   const itemVariants = {
@@ -35,6 +36,13 @@ const Projects = () => {
       websiteUrl: "https://rockys-chat-app.netlify.app/",
       projectUrl: "https://github.com/Rajkumar25012002/chat-app",
       tech: "HTML,Styled-components,React,Express JS,MongoDB,Socket.io",
+    },
+    {
+      title: "RoamNova",
+      backgroundImg: carRental,
+      websiteUrl: "https://roamnova.netlify.app/",
+      projectUrl: "https://github.com/Rajkumar25012002/roamnova",
+      tech: "HTML,CSS,React,Hooks",
     },
     {
       title: "Blog Post",
