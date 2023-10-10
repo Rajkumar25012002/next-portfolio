@@ -1,10 +1,8 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import school from "@/public/assets/school.jpg";
 import college from "@/public/assets/college.jpg";
-import vuram from "@/public/assets/vuram.jpg";
 import { motion } from "framer-motion";
 const Background = () => {
   const itemVariantsLeft = {

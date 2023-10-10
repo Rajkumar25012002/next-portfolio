@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { AiFillExperiment, AiOutlineMenu, AiFillHome } from "react-icons/ai";
+import { AiOutlineMenu, AiFillHome } from "react-icons/ai";
 import { FaProjectDiagram } from "react-icons/fa";
 import { BiSolidContact } from "react-icons/bi";
 import { BsFillInfoCircleFill } from "react-icons/bs";
