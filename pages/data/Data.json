@@ -1,0 +1,129 @@
+{
+  "AboutDetails": {
+    "intro": "As an engineering graduate, I am determined to thrive in this highly competitive world and carve a successful path in the IT field. I am passionate about exploring new and innovative technologies, always eager to stay updated with the latest advancements in the industry. My innate curiosity drives me to continuously seek knowledge and understand the evolving landscape of technology.",
+    "brief": "I possess a strong foundation in several key areas, including BPM tool-Appian, Java, JavaScript, React JS, Tailwind CSS, and SQL. Additionally, I have a basic understanding of Next JS,Angular TS, MongoDB, and Networking, which further enhances my skillset. I take pride in my ability to convert complex business requirements into innovative software solutions. My problem-solving skills, logical approach, and organizational abilities enable me to tackle challenges effectively. Furthermore, I am a dedicated team player with excellent interpersonal and communication skills, making me adept at collaborating with colleagues and clients alike. I am open to new challenges and opportunities, and I believe that my dedication, technical expertise, and passion for innovation make me an ideal fit for the IT industry."
+  },
+  "Skillset": [
+    {
+      "id": "1",
+      "name": "Appian",
+      "imageSource": "/assets/skills/appian.png"
+    },
+    {
+      "id": "2",
+      "name": "HTML",
+      "imageSource": "/assets/skills/html.png"
+    },
+    {
+      "id": "3",
+      "name": "CSS",
+      "imageSource": "/assets/skills/css.png"
+    },
+    {
+      "id": "4",
+      "name": "Java",
+      "imageSource": "/assets/skills/java.png"
+    },
+    {
+      "id": "5",
+      "name": "JavaScript",
+      "imageSource": "/assets/skills/javascript.png"
+    },
+    {
+      "id": "6",
+      "name": "React.js",
+      "imageSource": "/assets/skills/react.png"
+    },
+    {
+      "id": "7",
+      "name": "Next.js",
+      "imageSource": "/assets/skills/nextjs.png"
+    },
+    {
+      "id": "8",
+      "name": "Angular",
+      "imageSource": "/assets/skills/angular.png"
+    },
+    {
+      "id": "9",
+      "name": "Saas",
+      "imageSource": "/assets/skills/saas.png"
+    },
+    {
+      "id": "10",
+      "name": "Tailwind",
+      "imageSource": "/assets/skills/tailwind.png"
+    },
+    {
+      "id": "11",
+      "name": "Kubernetes",
+      "imageSource": "/assets/skills/kubernetes.png"
+    },
+    {
+      "id": "12",
+      "name": "Git",
+      "imageSource": "/assets/skills/git.png"
+    },
+    {
+      "id": "13",
+      "name": "SQL",
+      "imageSource": "/assets/skills/Sql.png"
+    },
+    {
+      "id": "14",
+      "name": "MongoDB",
+      "imageSource": "/assets/skills/Mongo.png"
+    }
+  ],
+  "projectData": [
+    {
+      "title": "Job Finder",
+      "backgroundImg": "/assets/jobfinder.jpg",
+      "websiteUrl": "https://rockysjobfinder.netlify.app/",
+      "projectUrl": "https://github.com/Rajkumar25012002/jobFinder",
+      "tech": "HTML,CSS,React,Hooks"
+    },
+    {
+      "title": "Chat App",
+      "backgroundImg": "/assets/chatapp.jpg",
+      "websiteUrl": "https://rockys-chat-app.netlify.app/",
+      "projectUrl": "https://github.com/Rajkumar25012002/chat-app",
+      "tech": "HTML,Styled-components,React,Express JS,MongoDB,Socket.io"
+    },
+    {
+      "title": "RoamNova",
+      "backgroundImg": "/assets/car-rental.png",
+      "websiteUrl": "https://roamnova.netlify.app/",
+      "projectUrl": "https://github.com/Rajkumar25012002/roamnova",
+      "tech": "HTML,CSS,React,Hooks"
+    },
+    {
+      "title": "Google Keep Clone",
+      "backgroundImg": "/assets/googlekeep.png",
+      "websiteUrl": "https://rockysgooglekeep.netlify.app/",
+      "projectUrl": "https://github.com/Rajkumar25012002/GoogleKeep",
+      "tech": "Angular TS,Saas"
+    },
+    {
+      "title": "Post App",
+      "backgroundImg": "/assets/blogpost.jpg",
+      "websiteUrl": "https://rockys-post-app.netlify.app/",
+      "projectUrl": "https://github.com/Rajkumar25012002/blogPostApp",
+      "tech": "HTML,CSS,React,Redux,JWT,Express JS,Mongodb"
+    },
+    {
+      "title": "Weather App",
+      "backgroundImg": "/assets/weather.jpg",
+      "websiteUrl": "https://rockysweather.netlify.app/",
+      "projectUrl": "https://github.com/Rajkumar25012002/weather-app",
+      "tech": "HTML,Styled-components,React,API"
+    },
+    {
+      "title": "Mobile Store",
+      "backgroundImg": "/assets/mobileStore.jpg",
+      "websiteUrl": "https://rockymobiles.netlify.app/",
+      "projectUrl": "https://github.com/Rajkumar25012002/mobileStore",
+      "tech": "HTML,CSS,React,Express JS,Mongodb"
+    }
+  ]
+}

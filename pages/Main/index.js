@@ -636,7 +636,7 @@ const Main = () => {
               transition={{ duration: 1 }}
               className="uppercase text-sm tracking-widest text-gray-200"
             >
-              LET U KNOW ABOUT ME
+              LET YOU KNOW ABOUT ME
             </motion.p>
             <motion.h1
               variants={variantLeft}
@@ -645,7 +645,7 @@ const Main = () => {
               transition={{ duration: 1 }}
               className="py-4 text-[rgb(240,242,245)]"
             >
-              Hi, I&#39;m{" "}
+              Hi, I am{" "}
               <span className="text-transparent text-7xl bg-clip-text bg-gradient-to-r from-[rgb(176,108,234)] to-[rgb(255,116,95)]">
                 {" "}
                 Raj Kumar
@@ -667,7 +667,7 @@ const Main = () => {
               transition={{ duration: 1 }}
               className="py-4 text-gray-300 sm:max-w-[70%] m-auto"
             >
-              I &apos; focused on learning tech stacks related to frontend web
+              I am focused on learning tech stacks related to frontend web
               application.
             </motion.p>
             <motion.div

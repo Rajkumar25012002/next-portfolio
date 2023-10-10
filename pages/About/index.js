@@ -4,29 +4,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Profile from "@/public/assets/profile_pic.png";
 import { AiOutlineDownload } from "react-icons/ai";
+import Data from "@/pages/data/Data";
 import Resumee from "../../public/RajKumar_resume.pdf";
 const About = () => {
-  const AboutDetails = {
-    intro: [
-      `As an engineering graduate, I am determined to thrive in this highly competitive world and carve a successful path in the IT field. 
-    I am passionate about exploring new and innovative technologies, always eager to stay updated with the latest advancements in the industry.
-    My innate curiosity drives me to continuously seek knowledge and understand the evolving landscape of technology.`,
-    ],
-    brief: [
-      `I possess a strong
-    foundation in several key areas, including BPM tool-Appian, Java,
-    JavaScript, React.js, Tailwind CSS, and MySQL. Additionally, I have
-    a basic understanding of Next.js, MongoDB, Kubernetes (K8s), and
-    networking, which further enhances my skillset. I take pride in my
-    ability to convert complex business requirements into innovative
-    software solutions. My problem-solving skills, logical approach, and
-    organizational abilities enable me to tackle challenges effectively.
-    Furthermore, I am a dedicated team player with excellent
-    interpersonal and communication skills, making me adept at
-    collaborating with colleagues and clients alike.
-    I am open to new challenges and opportunities, and I believe that my dedication, technical expertise, and passion for innovation make me an ideal fit for the IT industry`,
-    ],
-  };
   const variantleft = {
     hidden: { opacity: 0, x: -100 },
     show: { opacity: 1, x: 0 },
@@ -55,12 +35,12 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-sky-700">
             About
           </p>
-          <h2 className="py-4">Who I Am</h2>
+          <h2 className="py-4">Who am I</h2>
           <p className="py-2 text-justify text-gray-300">
-            {AboutDetails.intro}
+            {Data.AboutDetails.intro}
           </p>
           <p className="py-2 text-justify text-gray-300">
-            {AboutDetails.brief}
+            {Data.AboutDetails.brief}
           </p>
         </motion.div>
 

@@ -64,7 +64,7 @@ const Background = () => {
                 className=" bg-[rgba(255,255,255,0.02)] rounded-lg overflow-hidden flex flex-col sm:flex-row"
               >
                 <div className="flex items-center px-5 justify-start">
-                  <img
+                  <Image
                     src={item.img.src}
                     alt={item.type}
                     className="w-full h-60  rounded-xl object-cover"
